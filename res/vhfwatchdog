@@ -1,10 +1,10 @@
 #!/bin/sh
 
 check_vh() {
-  if [ $(pidof streaming_client | wc -l) -eq 0 ] && [ $(pidof vhusbdarm | wc -l) -gt 0 ]; then
+  if [ $(pidof moonlight | wc -l) -eq 0 ] && [ $(pidof vhusbdarm | wc -l) -gt 0 ]; then
     echo "Streaming connection ended, stopping VirtualHereFree server..."
     pkill vhusbdarm
-  elif [ $(pidof streaming_client | wc -l) -gt 0 ] && [ $(pidof vhusbdarm | wc -l) -eq 0 ]; then
+  elif [ $(pidof moonlight | wc -l) -gt 0 ] && [ $(pidof vhusbdarm | wc -l) -eq 0 ]; then
     echo "Streaming connection established, starting VirtualHereFree server..."
     /usr/local/bin/vhusbdarm -c /mnt/config/system/virtualherefree_config.ini -b
   fi
