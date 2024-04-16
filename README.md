@@ -1,7 +1,14 @@
 ![](icon_dark.png)
 
-# VirtualHereFree Installer for Steam Link
+# VirtualHereFree Installer for Moonlight on Steam Link
 
+## this fork from [milaq VirtualHereFreeInstaller](https://github.com/milaq/steamlink_VirtualHereFreeInstaller):
+- only changes the watchdog to look out for moonlight instead of steam streamingclient
+
+
+
+
+## Orginal readme 
 VirtualHere is a proprietary version of the open source USB/IP project. It allows you to "stream" USB devices to another
 machine to have it behave like it would be directly connected to the client.
 
@@ -34,7 +41,7 @@ To update to a newer Virtualhere server version just run the installer again.
 ### On your Desktop PC (client)
 
  * Download and install the latest VirtualHere free client for your OS: https://virtualhere.com/usb_client_software
- * Run the VirtualHere client. It should autodiscover the server when yoou are streaming.
+ * Run the VirtualHere client. It should autodiscover the server when you are streaming.
 
 ## Additional configuration
 
